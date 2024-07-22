@@ -2,12 +2,12 @@
 
 interface apb_interface;
 
-  //CLOCK AND RESET SIGNAL
+  //CLOCK AND RESET SIGNALS
   
   logic pclk;
   logic rst_n;
 
-  //MASTER SIGNAL
+  //MASTER SIGNALS
   
   logic [31:0] paddr;
   logic psel;
@@ -15,7 +15,7 @@ interface apb_interface;
   logic pwrite;
   logic [31:0] pwdata;
 
-  //SLAVE SIGNAL
+  //SLAVE SIGNALS
   
   logic pready;
   logic [31:0] prdata;
