@@ -5,7 +5,7 @@ interface apb_interface;
   //CLOCK AND RESET SIGNALS
   
   logic pclk;
-  logic rst_n;
+  logic presetn;
 
   //MASTER SIGNALS
   
