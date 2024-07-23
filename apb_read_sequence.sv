@@ -33,7 +33,7 @@ class apb_read_sequence extends uvm_sequence#(apb_seq_item);
    //Sequencer Driver handshaking
 
     start_item(seq_item_h);
-   assert(seq_item_h.randomize() with {pwrite == READ; psel == 1'b1;});
+   assert(seq_item_h.randomize() with {pwrite == READ;});
     finish_item(seq_item_h);
 
   endtask
