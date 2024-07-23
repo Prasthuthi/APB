@@ -33,7 +33,7 @@ class apb_write_sequence extends uvm_sequence#(apb_seq_item);
    //Sequencer Driver handshaking
 
     start_item(seq_item_h);
-   assert(seq_item_h.randomize() with {pwrite == WRITE; psel == 1'b1;});
+   assert(seq_item_h.randomize() with {pwrite == WRITE;});
     finish_item(seq_item_h);
 
   endtask
